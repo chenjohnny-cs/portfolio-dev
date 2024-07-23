@@ -1,0 +1,127 @@
+/*
+    Main
+*/
+
+:root {
+    --black: #0F141A;
+    --gray: #47585C;
+    --green-gray: #C8D5BB;
+}
+
+body {
+    font-family: 'Ubuntu Mono', 'monospace';
+    margin: 0;
+    background-color: var(--black);
+}
+
+/*
+    Menu Dropdown
+*/
+
+#navbar-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+#open-curtain {
+    position: absolute;
+    left: 2em;
+    top: 1.5em;
+    width: 4.5em;
+    height: 4.5em;
+    transition: 0.3s;
+}
+
+#open-curtain:hover {
+    width: 5em;
+    height: 5em;
+}
+
+/*
+    Curtain Menu
+*/
+
+#curtain-menu {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    overflow: hidden;
+    background-color: var(--green-gray);
+    filter: opacity(1);
+    transition: 0.5s;
+}
+
+.curtain-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.curtain-content a {
+    text-decoration: none;
+    padding: 0.6em;
+    font-size: 1.6em;
+    color: var(--black);
+    transition: 0.3s
+}
+
+.curtain-content a:hover {
+    font-size: 2.4em;
+}
+
+#curtain-menu #close-curtain {
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    font-size: 3.5em;
+    transition: 0.3s;
+}
+
+#curtain-menu #close-curtain:hover {
+    cursor: pointer;
+    font-size: 4em;
+}
+
+/*
+    Contact Icons
+*/
+
+#socials {
+    float: right;
+    list-style-type: none;
+    display: flex;
+    margin-right: 3em;
+}
+
+#socials li {
+    padding: 2em 1em 0em 1em;
+}
+
+#socials li img {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+/*
+    Footer
+*/
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: 1em 0 0 0;
+    padding: 1em;
+    color: var(--gray);
+    background-color: var(--green-gray);
+    z-index: 10;
+}
+
