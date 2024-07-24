@@ -3,15 +3,19 @@
 */
 
 :root {
-    --black: #0F141A;
-    --gray: #47585C;
-    --green-gray: #C8D5BB;
+    --darkgreen: #61892F;
+    --green: #86C232;
+    --black: #222629;
+    --grey: #474B4F;
+    --light-grey: #6B6E70;
 }
 
 body {
+    flex-direction: column;
     font-family: 'Ubuntu Mono', 'monospace';
-    margin: 0;
     background-color: var(--black);
+    transition: 0.5s;
+    overflow: hidden;
 }
 
 /*
@@ -49,14 +53,14 @@ body {
     position: fixed;
     z-index: 2;
     overflow: hidden;
-    background-color: var(--green-gray);
+    background-color: var(--green);
     filter: opacity(1);
     transition: 0.5s;
 }
 
 .curtain-content {
     position: relative;
-    top: 32%;
+    top: 25%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -66,7 +70,7 @@ body {
 .curtain-content a {
     text-decoration: none;
     padding: 0.6em;
-    font-size: 1.6em;
+    font-size: 1.8em;
     color: var(--black);
     transition: 0.3s
 }
@@ -86,6 +90,63 @@ body {
 #curtain-menu #close-curtain:hover {
     cursor: pointer;
     font-size: 4em;
+}
+
+/*
+    Page Navigation Indicator
+*/
+
+#page-navigation-indicator {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 0.8em;
+    left: 1.5%;
+}
+
+#page-container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+#page-container::-webkit-scrollbar {
+    width: 0;
+}
+
+.page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    margin-left: 10em;
+}
+
+.header {
+    position: absolute;
+    top: 33%;
+    color: white;
+    font-size: 72px;
+}
+
+.vertical-line {
+    border-left: var(--grey) 0.2em solid;
+    height: 100px;
+    margin: 0.5em 0 0.5em 0;
+}
+
+.vertical-text {
+    position: relative;
+    top: 42%;
+    left: 100%;
+    color: var(--light-grey);
+}
+
+.curr-page {
+    border-left: var(--green) 0.2em solid;
 }
 
 /*
@@ -120,8 +181,8 @@ body {
     text-align: center;
     margin: 1em 0 0 0;
     padding: 1em;
-    color: var(--gray);
-    background-color: var(--green-gray);
+    color: var(--black);
+    background-color: var(--darkgreen);
     z-index: 10;
 }
 

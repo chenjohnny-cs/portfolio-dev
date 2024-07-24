@@ -1,8 +1,8 @@
 <div id="curtain-menu">
     <div class="curtain-content">
-        <a href="#">About</a>
+        <a href="">About</a>
         <a href="#">My Work</a>
-        <a href="#">Contact</a>
+        <a href="./contact.php">Contact</a>
     </div>
 
     <a id="close-curtain" onclick="raiseCurtain()">&times;</a>

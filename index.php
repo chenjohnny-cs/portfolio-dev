@@ -23,9 +23,18 @@
 
     <?php
         include('includes/navbar.inc');
-        include('includes/footer.inc');
         ?>
 
+    <div id="page-navigation-indicator"></div>
+    <div id="page-container" onscroll="nextPage(this)">
+        <?php include('includes/pages/page1.inc')?>
+        <?php include('includes/pages/page2.inc')?>
+        <?php include('includes/pages/page3.inc')?>
+        <?php include('includes/pages/page4.inc')?>
+        <?php include('includes/pages/page5.inc')?>
+        <?php include('includes/pages/page6.inc')?>
+        <?php include('includes/pages/page7.inc')?>
+    </div>
     </body>
 </html>
 
