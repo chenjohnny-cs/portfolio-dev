@@ -2,6 +2,8 @@
 
 This website aims to store all of my projects, personal & professional work, and resumes in one place.
 
+# INSIGHTS
+
 ### What was this webpage built on?
 
 I used PHPStorm as my IDE, along with XAMPP to host and view it on my local machine.
