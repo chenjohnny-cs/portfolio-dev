@@ -8,11 +8,9 @@ function raiseCurtain() {
 }
 
 function nextPage(obj) {
-    let page_number = Math.floor(obj.scrollTop/window.innerHeight)+1;
+    let page_number = Math.floor(obj.scrollTop/(window.innerHeight-20))+1;
     let curr_page = document.querySelector(".curr-page");
     let next_page = document.getElementById("page"+page_number);
-
-    console.log(page_number);
 
     $(curr_page).removeClass("curr-page");
     $(next_page).addClass("curr-page");

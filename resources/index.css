@@ -103,7 +103,7 @@ body {
     flex-direction: column;
     height: 100vh;
     width: 0.8em;
-    left: 1.5%;
+    left: 0.75em;
 }
 
 #page-container {
@@ -123,13 +123,6 @@ body {
     height: 100%;
     scroll-snap-align: start;
     margin-left: 10em;
-}
-
-.header {
-    position: absolute;
-    top: 33%;
-    color: white;
-    font-size: 72px;
 }
 
 .vertical-line {
@@ -185,4 +178,50 @@ body {
     background-color: var(--darkgreen);
     z-index: 10;
 }
+
+/*
+    Page 1
+*/
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    color: white;
+    font-size: 96px;
+    margin: 4em 0 0 0;
+}
+
+#desc {
+    font-size: 24px;
+    color: var(--light-grey);
+}
+
+#desc p {
+    margin: 0.5em 0 0 0;
+}
+
+.btn-important {
+    font-size: 20px;
+    background-color: var(--green);
+    border-radius: 1em;
+    color: black;
+    padding: 1em 25.6em 1em 25.6em;
+}
+
+.btn-important:hover {
+    background-color: var(--darkgreen);
+}
+
+.seperator {
+    margin: 2em 0 2em 0;
+    border: 1px var(--grey) solid;
+    width: 70em;
+}
+
+/*
+    Page 2
+*/
 
